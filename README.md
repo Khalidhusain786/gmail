@@ -14,13 +14,13 @@ This is a Python3 Script for hacking Gmail account using Dictionary Attack Metho
 
     $ python3 gmail.py
 
-    
+   
+# Screenshot
 
-##camera Screenshot
 
-!  (https://github.com/Khalidhusain786/gmail/blob/main/Pic1.png)
+! [CAPTURE] (https://github.com/Khalidhusain786/gmail/blob/main/Pic1.png)
 
-         
+        
 
 # You need to have python 3 pre-installed
 
