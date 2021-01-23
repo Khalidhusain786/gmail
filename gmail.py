@@ -16,11 +16,11 @@ def artwork():
 
     print("#           /\  /\   / (__,,,,|                          #")
 
-    print("#          ) /^\) ^\/ _)                Gmail-hack!      #")
+    print("#          ) /^\) ^\/ _)                CoderBoy         #")
 
     print("#          )   /^\/   _)                CoDeD By:        #")
 
-    print("#          )   _ /  / _)                         Khalid Husain    #")
+    print("#          )   _ /  / _)               Khalid Husain.    #")
 
     print("#      /\  )/\/ ||  | )_)                                #")
 
