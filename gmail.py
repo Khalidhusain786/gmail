@@ -20,9 +20,9 @@ def artwork():
 
     print("#          )   /^\/   _)                CoDeD By:        #")
 
-    print("#          )   _ /  / _)               Khalid Husain.    #")
+    print("#          )   _𝕊𝕙𝕚𝕧𝕒𝕟𝕚 /  / _)         Khalid Husain.    #")
 
-    print("#      /\  )/\/ ||  | )_)                                #")
+    print("#      /\  )/\/ |𝕋𝕙𝕒𝕜𝕦𝕣|  | )_)                           #")
 
     print("#     <  >      |(,,) )__)                               #")
 
