@@ -16,7 +16,7 @@ This is a Python3 Script for hacking Gmail account using Dictionary Attack Metho
 
     
 
-![https://github.com/Khalidhusain786/gmail/blob/main/Pic1.png)
+! [https://github.com/Khalidhusain786/gmail/blob/main/Pic1.png)
 
          
 
