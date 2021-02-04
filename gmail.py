@@ -76,4 +76,4 @@ for password in passswfile:
 
     except smtplib.SMTPAuthenticationError:
 
-        print("[!] Pasword Is Wrong. %s " % password)
+        print("[!] Pasword . %s " % password)
