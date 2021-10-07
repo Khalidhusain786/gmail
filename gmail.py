@@ -1,5 +1,5 @@
 #!/usr/bin/python
-'''create by Ha3MrX'''
+'''create by Khalidhusain786''
 
 import smtplib
 from os import system
@@ -70,5 +70,5 @@ def login():
 
             break
          else:
-            print '[!] password not found => ' + password
+            print '[!] password  found => ' + password
 login()
