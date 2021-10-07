@@ -1,19 +1,19 @@
 #!/usr/bin/python
-'''create by Ha3MrX'''
+'''create by Khalid
 
 import smtplib
 from os import system
 
 def main():
    print '================================================='
-   print '               create by Ha3MrX                  '
+   print '               create by Khalid Husain                  '
    print '================================================='
    print '               ++++++++++++++++++++              '
-   print '\n                                               '
-   print '  _,.                                            '
+   print '                                            '
+   print '                                              '
    print '                                                 '
    print '                                                 '
-   print '           HA3MrX                                '
+   print '           KHALID                                '
    print '       _,.                   '
    print '     ,` -.)                  '
    print '    ( _/-\\-._               '
@@ -33,7 +33,7 @@ def main():
    print '   (  /   `-._//^`           '
    print '    `Y-.____(__}             '
    print '     |     {__)              ' 
-   print '           ()   V.1.0        '
+   print '           ()   V.1.1        '
 
 main()
 print '[1] start the attack'
