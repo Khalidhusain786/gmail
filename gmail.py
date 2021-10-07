@@ -53,7 +53,6 @@ print("\n")
 pwd = input(" Add a custom password list\n => ")
 
 
-    passswfile="khalid.txt"
 
 else :
 
