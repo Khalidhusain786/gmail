@@ -46,13 +46,12 @@ smtpserver.ehlo()
 
 smtpserver.starttls()
 
-user = input("Enter The Target Gmail Adress => ")
+user = input("Target Name")
 
 print("\n")
 
-pwd = input("Enter '0' to use the inbuilt passwords list \nEnter '2' to Add a custom password list\n => ")
+pwd = input(" Add a custom password list\n => ")
 
-if pwd=='0':
 
     passswfile="khalid.txt"
 
