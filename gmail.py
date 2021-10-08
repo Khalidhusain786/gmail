@@ -1,4 +1,4 @@
-Created by 𝙆𝙝𝙖𝙡𝙞𝙙 𝙃𝙪𝙨𝙖𝙞𝙣
+
 
 import smtplib
 import sys
