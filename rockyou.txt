@@ -12,11 +12,11 @@ Projects
 Wiki
 Security
 Insights
-indian-wordlist/indian-passwords-length8-20
-
-CI zxcV32 Auto commit by pipeline
- 0 contributors
-270 lines (270 sloc)  2.9 KB
+husain786
+shivanithakur
+khalidbhai786
+@shivani786
+@khalid786
 1234567890000000
 Jaimatadi
 nidhisep
